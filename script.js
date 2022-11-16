@@ -1,3 +1,4 @@
+"use strict";
 var bt1 = document.getElementById('btn1');
 var bt2 = document.getElementById('btn2');
 var cntr = document.getElementById('counter');
@@ -7,8 +8,8 @@ bt1.addEventListener('click', count);
 bt2.addEventListener('click', reset);
 
 function reset(){
-    cntr.innerHTML = 0 + " ";
-    cnt = 1;
+    cnt = 0;
+    count();
 }
 
 function count(){
